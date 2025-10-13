@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <title>Santiago Noh | Portafolio</title>
+    <!-- Add alert js, add bulma and AOS -->
 </head>
 <body>
-    My portfolio....
+    <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label" for="change-theme-check">Modo claro</label>
+    <input id="change-theme-check" type="checkbox"> 
+
+    <select name="change-lang-select" id="change-lang-select">
+        <option data-translation-key="nav.buttons.es-lang-caption" value="es" selected>Español</option>
+        <option data-translation-key="nav.buttons.en-lang-caption" value="en">Ingles</option>
+    </select>
+    
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
