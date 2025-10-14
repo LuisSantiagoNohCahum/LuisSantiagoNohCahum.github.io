@@ -1,28 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="has-navbar-fixed-top">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bulma.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Santiago Noh | Portafolio</title>
     <!-- Add alert js, add bulma and AOS -->
 </head>
+
 <body>
     <header>
-        <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label" for="change-theme-check"></label>
-        
-        <label class="switch">
-            <input id="change-theme-check" type="checkbox"> 
-            <span class="slider round"></span>
-        </label>
+        <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="has-text-weight-bold is-size-5">Portafolio | Santiago Noh</div>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-        <div class="select is-rounded">
-            <select name="change-lang-select" id="change-lang-select">
-                <option data-translation-key="nav.buttons.es-lang-caption" value="es" selected>Español</option>
-                <option data-translation-key="nav.buttons.en-lang-caption" value="en">Ingles</option>
-            </select>
-        </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <!-- Move to end section -->
+                 <!-- gap not work in the burger menu dropdown -->
+                <div class="navbar-start">
+                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-user"></i>Perfil</a>
+                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-user-graduate"></i>Educacion</a>
+                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-briefcase"></i>Experiencia </a>
+                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-gears"></i>Proyectos </a> <!-- List tools here -->
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons" style="justify-content: center;">
+                            <!-- quitar el translate key y asi si podemos meter el check adentro y no se reemplazara -->
+                            <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label"
+                                for="change-theme-check"></label>
+                            <!-- o hacerlo con el svg last y fisrt child y agregar o quitar clases segun sea el caso -->
+                            <label class="switch">
+                                <input id="change-theme-check" type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="control has-icons-left">
+                                <div class="select is-rounded">
+                                    <select name="change-lang-select" id="change-lang-select">
+                                        <option data-translation-key="nav.buttons.es-lang-caption" value="es" selected>Español</option>
+                                        <option data-translation-key="nav.buttons.en-lang-caption" value="en">Ingles</option>
+                                    </select>
+                                </div>
+                                <div class="icon is-left">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                            </div>
+                            <a class="button is-light is-rounded">
+                                <div class="icon">
+                                    <i class="fa-solid fa-file"></i>
+                                </div>
+                                <strong>CV</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </nav>
+        
     </header>
     <main>
         <div class="container">
@@ -38,15 +88,11 @@
             <div id="my-experience">
 
             </div>
-            <div id="contact-me">
-
-            </div>
         </div>
     </main>
-    <footer class="footer">
 
-    </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./app.js"></script>
 </body>
+
 </html>

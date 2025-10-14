@@ -26,12 +26,9 @@ changeLangSelect.addEventListener("change", (ev) => {
 })
 
 document.addEventListener('DOMContentLoaded', (ev) => {
-    const lang = localStorage.getItem("lang")
-    if(lang) preferences.lang = lang;
+    loadPreferences();
+    loadDropdownMenu();
 
-    const theme = localStorage.getItem("theme")
-    if(theme) preferences.theme = theme;
-    
     changeLangSelect.value = preferences.lang;
     let checkAndRaiseEvent = preferences.theme === "dark"
     changeThemeCheck.checked = checkAndRaiseEvent
@@ -49,3 +46,28 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         changeThemeCheck.dispatchEvent(clickEvent);
     }
 });
+
+function loadPreferences()
+{
+    const lang = localStorage.getItem("lang")
+    if(lang) preferences.lang = lang;
+
+    const theme = localStorage.getItem("theme")
+    if(theme) preferences.theme = theme;
+}
+
+function loadDropdownMenu()
+{
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
