@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bulma.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Santiago Noh | Portafolio</title>
     <!-- Add alert js, add bulma and AOS -->
 </head>
 <body>
-    <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label" for="change-theme-check">Modo claro</label>
-    <input id="change-theme-check" type="checkbox"> 
+    <header>
+        <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label" for="change-theme-check"></label>
+        
+        <label class="switch">
+            <input id="change-theme-check" type="checkbox"> 
+            <span class="slider round"></span>
+        </label>
 
-    <select name="change-lang-select" id="change-lang-select">
-        <option data-translation-key="nav.buttons.es-lang-caption" value="es" selected>Español</option>
-        <option data-translation-key="nav.buttons.en-lang-caption" value="en">Ingles</option>
-    </select>
-    
+        <div class="select is-rounded">
+            <select name="change-lang-select" id="change-lang-select">
+                <option data-translation-key="nav.buttons.es-lang-caption" value="es" selected>Español</option>
+                <option data-translation-key="nav.buttons.en-lang-caption" value="en">Ingles</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="my-profile">
+
+            </div>
+            <div id="my-projects">
+
+            </div>
+            <div class="my-education">
+
+            </div>
+            <div id="my-experience">
+
+            </div>
+            <div id="contact-me">
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
     <script type="module" src="./app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { langs } from "./es-lang.js"
+import { langs } from "./langs.js"
 
 export class Translator {
     #getCurrentLang() {
