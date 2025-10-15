@@ -5,6 +5,7 @@ const preferences = {
     theme: "light"
 }
 
+AOS.init();
 const translator = new Translator();
 
 const changeThemeCheck = document.getElementById("change-theme-check");
