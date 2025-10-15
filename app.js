@@ -1,6 +1,6 @@
 import { Translator } from "./langs/translator.js";
 
-var preferences = {
+const preferences = {
     lang: "es",
     theme: "light"
 }
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
     let checkAndRaiseEvent = preferences.theme === "dark"
     changeThemeCheck.checked = checkAndRaiseEvent
 
-    // To avoid this change the attribute value for the changeThemeCheck
     translator.translate();
 
     if(checkAndRaiseEvent) {
@@ -45,8 +44,7 @@ document.addEventListener('DOMContentLoaded', (ev) => {
     }
 });
 
-function loadPreferences()
-{
+function loadPreferences() {
     const lang = localStorage.getItem("lang")
     if(lang) preferences.lang = lang;
 
@@ -54,8 +52,7 @@ function loadPreferences()
     if(theme) preferences.theme = theme;
 }
 
-function loadDropdownMenu()
-{
+function loadDropdownMenu() {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
   $navbarBurgers.forEach( el => {

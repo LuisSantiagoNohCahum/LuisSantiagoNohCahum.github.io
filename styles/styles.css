@@ -1,3 +1,7 @@
+:root {
+  --var-orange-color-base: #fa904b;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
