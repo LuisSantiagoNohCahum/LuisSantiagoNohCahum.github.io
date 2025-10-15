@@ -13,6 +13,38 @@
   height: 0;
 }
 
+.switch > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.switch > .slider + svg {
+  opacity: 1;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+
+.switch > svg:last-child{
+  opacity: 0;
+}
+
+.switch > input:checked + .slider + svg {
+  opacity: 0;
+  /* -webkit-transition: opacity .5s;
+  transition: opacity .5s; */
+}
+
+.switch > input:checked ~ svg:last-child {
+  opacity: 1;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+
 /* The slider */
 .slider {
   position: absolute;
@@ -24,6 +56,7 @@
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+  z-index: 0;
 }
 
 .slider:before {

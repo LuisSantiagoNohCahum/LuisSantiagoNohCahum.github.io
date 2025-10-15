@@ -15,12 +15,12 @@
     <header>
         <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="#">
                     <i class="fa-solid fa-code"></i>
-                    <div class="has-text-weight-bold is-size-5">Portafolio | Santiago Noh</div>
+                    <div data-translation-key="nav.title_item" class="has-text-weight-bold is-size-5">Portafolio | Santiago Noh</div>
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
+                    data-target="main-navbar">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -28,26 +28,32 @@
                 </a>
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-                <!-- Move to end section -->
-                 <!-- gap not work in the burger menu dropdown -->
-                <div class="navbar-start">
-                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-user"></i>Perfil</a>
-                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-user-graduate"></i>Educacion</a>
-                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-briefcase"></i>Experiencia </a>
-                    <a style="gap: .2rem;" class="navbar-item has-text-centered"><i class="fa-solid fa-gears"></i>Proyectos </a> <!-- List tools here -->
-                </div>
-
+            <div id="main-navbar" class="navbar-menu">
                 <div class="navbar-end">
+                    <!-- gap not work in the burger menu dropdown -->
+                    <a href="#my-profile" style="gap: .2rem;" class="navbar-item has-text-centered">
+                        <i class="fa-solid fa-user"></i>
+                        <span data-translation-key="nav.profile_item"></span>
+                    </a>
+                    <a href="#my-education" style="gap: .2rem;" class="navbar-item has-text-centered">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span data-translation-key="nav.education_item"></span>
+                    </a>
+                    <a href="#my-experience" style="gap: .2rem;" class="navbar-item has-text-centered">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span data-translation-key="nav.experience_item"></span>
+                    </a>
+                    <a href="#my-projects" style="gap: .2rem;" class="navbar-item has-text-centered">
+                        <i class="fa-solid fa-gears"></i>
+                        <span data-translation-key="nav.projects_item"></span>
+                    </a> <!-- List tools here -->
                     <div class="navbar-item">
                         <div class="buttons" style="justify-content: center;">
-                            <!-- quitar el translate key y asi si podemos meter el check adentro y no se reemplazara -->
-                            <label data-translation-key="nav.buttons.theme-lightmode-caption" id="change-theme-label"
-                                for="change-theme-check"></label>
-                            <!-- o hacerlo con el svg last y fisrt child y agregar o quitar clases segun sea el caso -->
-                            <label class="switch">
+                            <label class="switch" for="change-theme-check">
                                 <input id="change-theme-check" type="checkbox">
                                 <span class="slider round"></span>
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
                             </label>
                             <div class="control has-icons-left">
                                 <div class="select is-rounded">

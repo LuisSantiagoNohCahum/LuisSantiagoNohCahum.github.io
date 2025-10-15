@@ -8,13 +8,11 @@ var preferences = {
 const translator = new Translator();
 
 const changeThemeCheck = document.getElementById("change-theme-check");
-const changeThemeLabel = document.getElementById("change-theme-label");
 const html = document.getElementsByTagName("html")[0];
 const changeLangSelect = document.getElementById("change-lang-select");
 
 changeThemeCheck.addEventListener("change", (ev) => {
     let checked = ev.target.checked;
-    changeThemeLabel.innerText = translator.getTranslation(checked ? "nav.buttons.theme-darkmode-caption" : "nav.buttons.theme-lightmode-caption");
     let theme = checked ? "dark" : "light";
     html.setAttribute("data-theme", theme)
     localStorage.setItem("theme", theme);
