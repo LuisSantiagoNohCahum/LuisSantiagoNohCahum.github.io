@@ -17,7 +17,7 @@
         <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation" style="border-bottom: var(--bulma-border) solid 1px;">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <i class="fa-solid fa-code"></i>
+                    <span class="icon has-text-primary"><i class="fa-solid fa-code"></i></span>
                     <div data-translation-key="nav.title_item" class="has-text-weight-bold is-size-5"></div>
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -32,21 +32,37 @@
             <div id="main-navbar" class="navbar-menu">
                 <div class="navbar-end">
                     <!-- gap not work in the burger menu dropdown -->
-                    <a href="#my-profile" style="gap: .2rem;" class="navbar-item has-text-centered">
-                        <i class="fa-solid fa-user"></i>
-                        <span data-translation-key="nav.profile_item"></span>
+                    <a href="#my-profile" class="navbar-item has-text-centered">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span data-translation-key="nav.profile_item"></span>
+                        </span>
                     </a>
-                    <a href="#my-education" style="gap: .2rem;" class="navbar-item has-text-centered">
-                        <i class="fa-solid fa-user-graduate"></i>
-                        <span data-translation-key="nav.education_item"></span>
+                    <a href="#my-education" class="navbar-item has-text-centered">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </span>
+                            <span data-translation-key="nav.education_item"></span>
+                        </span>
                     </a>
                     <a href="#my-experience" style="gap: .2rem;" class="navbar-item has-text-centered">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span data-translation-key="nav.experience_item"></span>
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                            <span data-translation-key="nav.experience_item"></span>
+                        </span>
                     </a>
                     <a href="#my-projects" style="gap: .2rem;" class="navbar-item has-text-centered">
-                        <i class="fa-solid fa-gears"></i>
-                        <span data-translation-key="nav.projects_item"></span>
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </span>
+                            <span data-translation-key="nav.projects_item"></span>
+                        </span>
                     </a> <!-- List tools here -->
                     <div class="navbar-item">
                         <div class="buttons" style="justify-content: center;">
@@ -81,7 +97,7 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container is-max-desktop">
             <div id="my-profile" data-aos="fade-up" class="mt-6 mb-4 px-2">
                 <div class="w-100 is-flex is-justify-content-center">
                     <figure class="image is-128x128">
@@ -91,32 +107,243 @@
                 
                 <p class="title is-3 has-text-weight-medium has-text-centered mt-3">Luis Santiago Noh Cahum</p>
                 <p class="subtitle is-5 has-text-grey has-text-centered mt-2">.NET Developer</p>
-                
+                <div class="buttons is-flex is-justify-content-center">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>Yucatán, México.</span>
+                    </span>
+                    <a href="https://www.linkedin.com/in/santiagonc" class="button is-ghost has-text-inherit">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </span>
+                            <span class="has-text-weight-normal">Linkedin</span>
+                        </span>
+                    </a>
+                    <a href="mailto:santiagocahum25@gmail.com" class="button is-ghost has-text-inherit ">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <span class="has-text-weight-normal">Correo</span>
+                        </span>
+                    </a>
+                    <a href="https://github.com/LuisSantiagoNohCahum" class="button is-ghost has-text-inherit">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                            <span class="has-text-weight-normal">Github</span>
+                        </span>
+                    </a>
+                </div>
             </div>
-            <div id="about-me" data-aos="fade-up" class="mt-6 mb-4 px-2">
+            <div id="about-me" data-aos="fade-up" class="mt-6 mb-4 px-3">
                 <p class="title is-4 has-text-weight-bold">About Me</p>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis iure quae eaque ullam eos molestias, perspiciatis ducimus provident ipsa cum atque dolorem dicta et praesentium in quibusdam architecto? Aut, voluptas!
+                <p class="has-text-justified">
+                    Ingeniero en Sistemas computacionales y desarrollador .NET con mas de dos años de experiencia. 
+                    Soy una persona autodidacta y con un enfoque en el desarrollo de software robusto y escalable. 
+                    A lo largo de mi carrera, he trabajado en diversos proyectos que me han permitido fortalecer mis habilidades en programación. 
+                    Poseo conocimientos en NET Core, C#, SQL Server, Git, JavaScript, PHP, Python.
                 </p>
+
+                <p class="subtitle is-5 mt-5">Aptitudes</p>
+                <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-primary"><i class="fa-solid fa-lines-leaning"></i></span>
+                            <span class="tag">Autodidacta</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-primary"><i class="fa-solid fa-bullseye"></i></span>
+                            <span class="tag">Responsable</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-primary"><i class="fa-regular fa-comments"></i></span>
+                            <span class="tag">Trabajo en equipo</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="tags has-addons">
+                            <span class="tag is-primary"><i class="fa-solid fa-users"></i></span>
+                            <span class="tag">Liderazgo</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="my-education" data-aos="fade-up" class="mt-6 mb-4 px-2">
+            <div id="my-education" data-aos="fade-up" class="mt-6 mb-4 px-3">
                 <p class="title is-4 has-text-weight-bold">Estudios y certificaciones</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, delectus. Delectus at, sit aliquam est earum aut voluptate cupiditate. Magni vero ducimus quisquam accusantium iste incidunt obcaecati labore repellendus eveniet.
-                </p>
+                <p class="subtitle is-5 mt-5">Logros académicos</p>
+                <div class="box is-shadowless is-box-shadowed-on-hover">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="https://sgi.valladolid.tecnm.mx/Imagenes/Escudo_ITSVA_registrado_copia.png" alt="Image" />
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Ingeniería en Sistemas Computacionales</strong> <br/>
+                                    <!-- <small>Ekasoft (en remoto).</small><br/> -->
+                                    <small>Instituto Tecnológico Superior de Valladolid</small><br/>
+                                    <small>Agosto 2019 - Diciembre 2023</small><br/>
+                                    Especialidad en desarrollo de software.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="subtitle is-5 mt-5">Certificados</p>
             </div>
-            <div id="my-experience" data-aos="fade-up" class="mt-6 mb-4 px-2">
+            <div id="my-experience" data-aos="fade-up" class="mt-6 mb-4 px-3">
                 <p class="title is-4 has-text-weight-bold">Experiencia</p>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sed numquam a, doloribus laboriosam, vero, veritatis explicabo adipisci voluptates rem impedit aliquid? Quam cupiditate distinctio, et doloremque perferendis sed veniam.
-                </p>
+                <div class="box is-shadowless is-box-shadowed-on-hover">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="https://ekasoft.com/wp-content/uploads/2024/10/icono-ekasoft.png" alt="Image" />
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="has-text-justified">
+                                    <strong>.NET Developer</strong> <br/>
+                                    <small>Julio 2023 - Actualidad</small><br/>
+                                    Desarrollo y mantenimiento de los modulos de la suite fiscal InfoSAT con .NET Framework, DevExpress y SQL Server. 
+                                    Parte de mi trabajo se centra en la creacion de reportes para explotar datos de importancia y 
+                                    desarrollar nuevas funcionalidades de los diferentes modulos como Auditanet, BlackList, Guardata, Validanet, etc. Por otro lado 
+                                    brindo apoyo en la atencion de tickets de soporte para la resolucion de incidencias. Dentro de los proyectos en los que he participado 
+                                    he contribuido con la optimizacion de los tiempos de ejecucion de los reportes, resultando en una mejor experiencia de usuario.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div id="my-projects" data-aos="fade-up" class="mt-6 mb-4 px-2">
+            <div id="my-projects" data-aos="fade-up" class="my-6 px-3">
                 <p class="title is-4 has-text-weight-bold">Proyectos y habilidades</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eos modi necessitatibus. Dolorem eos, earum temporibus laborum totam molestiae maxime a distinctio eum autem corrupti quasi nesciunt magni accusantium quos.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta sit facere hic culpa neque similique consectetur officiis ea, nobis assumenda inventore voluptatibus molestias qui architecto ab suscipit mollitia minus?
-                </p>
+                <p class="subtitle is-5 mt-5">Habilidades</p>
+                <div class="is-flex is-flex-wrap-wrap ">
+                    <figure class="image is-64x64 mr-4 my-2">
+                        <img src="./images/dotnet.svg" />
+                    </figure>
+                    <figure class="image is-64x64 mr-4 my-2">
+                        <img src="./images/csharp.svg" />
+                    </figure>
+                    <figure class="image is-64x64 mr-4 my-2">
+                        <img src="./images/sql-server.svg" />
+                    </figure>
+                    <figure class="image is-64x64 mr-4 my-2">
+                        <img src="./images/git.svg" />
+                    </figure>
+                    <figure class="image is-64x64 mr-4 my-2">
+                        <img src="./images/angular.svg" />
+                    </figure>
+                    <figure class="image is-64x64 mr-4 my-2 has-background-dark is-align-content-center">
+                        <img src="./images/php_dark.svg" />
+                    </figure>
+                </div>
+                <p class="subtitle is-5 mt-5">Proyectos</p>
+                <div class="columns is-multiline">
+                    <div class="column is-one-third">
+                        <div class="card is-box-shadowed-on-hover">
+                            <div class="card-image">
+                                <figure class="image is-square">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5 has-text-weight-bold py-1">RemoveBG</p>
+                                    </div>
+                                </div>
+                
+                                <div class="content">
+                                    <span class="is-scrollable-box">
+                                        <small>
+                                            Aplicación de escritorio desarrollado con Python para sustituir el fondo de imagenes con el uso de librerias para 
+                                            la manipulacion y transformacion de imagenes como RemBG y OpenCV.
+                                        </small>
+                                    </span>
+                                    <div class="field is-grouped is-grouped-multiline mt-4">
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">Python</span>
+                                            <span class="tag is-info"><i class="fa-brands fa-python"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">OpenCV</span>
+                                            <span class="tag is-success"><i class="fa-solid fa-image"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">Bitbucket</span>
+                                            <span class="tag is-info"><i class="fa-brands fa-bitbucket"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card is-box-shadowed-on-hover">
+                            <div class="card-image">
+                                <figure class="image is-square">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5 has-text-weight-bold py-1">The Turtle Travel</p>
+                                    </div>
+                                </div>
+                
+                                <div class="content">
+                                    <span class="is-scrollable-box">
+                                        <small>
+                                            Aplicación web desarrollada con PHP para realizar reserva de tours. 
+                                            Se integro una vista para mostrar el catalogo y una vista de administrador 
+                                            para administrar los tours, las reservas y los pagos.
+                                        </small>
+                                    </span>
+                                    <div class="field is-grouped is-grouped-multiline mt-4">
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">PHP</span>
+                                            <span class="tag is-link"><i class="fa-brands fa-php"></i></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">Paypal</span>
+                                            <span class="tag is-info"><i class="fa-brands fa-paypal"></i></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="control">
+                                            <div class="tags has-addons">
+                                            <span class="tag is-dark">JavaScript</span>
+                                            <span class="tag is-danger"><i class="fa-brands fa-js"></i></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

@@ -57,7 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(230, 230, 230);
   -webkit-transition: .4s;
   transition: .4s;
   z-index: 0;
@@ -96,4 +96,51 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Overwrite for customize text decoration and color on hover */
+.is-ghost:hover {
+  --bulma-button-ghost-hover-decoration: none;
+  color: #2196F3 !important;
+}
+
+.icon-text {
+  --bulma-icon-text-spacing: none;
+}
+
+.card {
+  --bulma-card-shadow: none;
+  border: var(--bulma-border) solid 1px !important;
+}
+
+.is-box-shadowed-on-hover {
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+
+.is-box-shadowed-on-hover:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.is-scrollable-box {
+  height: 100px !important;
+  overflow: auto !important; 
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Mostly for vertical scrollbars */
+  height: 12px; /* Mostly for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb { /* Foreground */
+  background: var(--scrollbar-foreground);
+  background: #ccc;
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track { /* Background */
+  background: var(--scrollbar-background);
+  background: transparent;
 }
